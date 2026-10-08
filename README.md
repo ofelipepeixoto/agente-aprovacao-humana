@@ -18,6 +18,10 @@ python -m unittest -v test_agente.py
 
 O GitHub Actions executa os testes a cada alteração.
 
+## Estudos de fronteiras de ação
+
+- [AI Farm Agent, commit `4ffa018f` (08/10/2026)](docs/studies/ai-farm-agent-2026-10-08.md): dois probes sintéticos de leitura fora da raiz e validação de plano, com critérios para reavaliar uma eventual adoção. O estudo não integra o executor externo a este exemplo.
+
 ## Decisões verificáveis
 
 - A proposta é criada antes da ação.

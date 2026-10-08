@@ -22,7 +22,9 @@ O [executor](https://github.com/ognistie/AI-Farm-Agent/blob/4ffa018f50d25668e6e4
 Requer Python 3.11+ e Git. Use uma cópia pública separada, revista e fixada no SHA; não instale dependências, não configure chave, não rode o aplicativo e não forneça diretórios reais ao probe.
 
 ```sh
-git clone --depth 1 https://github.com/ognistie/AI-Farm-Agent.git ../ai-farm-agent-audit
+git clone --no-checkout --depth 1 https://github.com/ognistie/AI-Farm-Agent.git ../ai-farm-agent-audit
+git -C ../ai-farm-agent-audit fetch --depth 1 origin 4ffa018f50d25668e6e46726723b0ed6040caf2f
+git -C ../ai-farm-agent-audit checkout --detach 4ffa018f50d25668e6e46726723b0ed6040caf2f
 git -C ../ai-farm-agent-audit rev-parse HEAD
 python3 studies/ai_farm_agent_probe.py --upstream ../ai-farm-agent-audit
 ```
